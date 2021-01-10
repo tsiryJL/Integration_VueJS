@@ -18,3 +18,6 @@ function myFunction(x) {
   function MeAdd() {
     element.classList.add("d-none");
   }
+
+var scene = document.getElementById('js-scene');
+var parallax = new Parallax(scene);

@@ -25,7 +25,7 @@
   # Header
   --------------------------------------------------------------*/
   #header {
-    top: 50px;
+    top: 60px;
     height: 70px;
     z-index: 997;
     transition: all 0.5s;
@@ -100,7 +100,7 @@
     background: linear-gradient(104deg, #f5710f 0%, #ec3000 100%);
     color: #fff;
     border-radius: 20px;
-    margin-left:6em;
+    margin-left:4em;
     padding: 10px 25px;
     text-transform: uppercase;
     font-size: 12px;
