@@ -198,3 +198,30 @@
     height: 25px;
     fill: rgb(143, 143, 143);
   }
+
+
+  .profil__card{
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+  }
+
+  .MiniCard{
+    width:17em;
+    height: 5em;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(68, 68, 68, 0.692);
+    
+  }
+
+.checkbox {
+  background: white;
+  display: block;
+  font-size: 10vmin;
+  width: 24px;
+  height: 1em;
+  border: solid 2px grey;
+  position: relative;
+  cursor: pointer;
