@@ -164,14 +164,6 @@
     color: #ffb03b;
   }
   
-  #hero p {
-    width: 80%;
-    -webkit-animation-delay: 0.4s;
-    animation-delay: 0.4s;
-    margin: 0 auto 30px auto;
-    color: #fff;
-  }
-  
 .searchbox input:focus {
     outline: none; /*by default,input shows an outline on focus */
 }
@@ -197,27 +189,6 @@
     width: 25px;
     height: 25px;
     fill: rgb(143, 143, 143);
-  }
-
-
-  .profil__card{
-    width: 70px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20%;
-  }
-
-  .MiniCard{
-    width:18em;
-    height: 5em;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px rgba(68, 68, 68, 0.692);
-    float: right;
-    position: relative;
-    top: 35em;
-    right: 5em;
-    
   }
 
 /*  Checkbox  */
