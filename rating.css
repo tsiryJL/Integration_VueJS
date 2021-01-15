@@ -39,3 +39,132 @@
 }
 
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+.rate__check{
+    width: fit-content;
+}
+.rate__check:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate__check:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:20px;
+    color:#ccc;
+}
+
+.ligne-height{
+    line-height: 20px;
+    margin: 12px 0px 0px 10px;
+}
+
+.rate__check:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate__check > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate__check:not(:checked) > label:hover,
+.rate__check:not(:checked) > label:hover ~ label {
+    color: #ffc700;  
+}
+.rate__check > input:checked + label:hover,
+.rate__check > input:checked + label:hover ~ label,
+.rate__check > input:checked ~ label:hover,
+.rate__check > input:checked ~ label:hover ~ label,
+.rate__check > label:hover ~ input:checked ~ label {
+    color: #ffc700;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+.star-rating__checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  
+  .star-rating__star {
+    display: inline-block;
+    padding: 3px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1.5em;
+    color: #ababab;
+    transition: color 0.2s ease-out;
+  }
+  .star-rating__star:hover {
+    cursor: pointer;
+  }
+  .star-rating__star.is-selected {
+    color: #ffd700;
+  }
+  .star-rating__star.is-disabled:hover {
+    cursor: default;
+  }
+
+
+
+  .app {
+    padding: 10px;
+  }
+  
+  .label {
+    display: block;
+  }
+  
+  .range {
+    margin: 10px 0;
+  }
+  
+  li {
+    line-height: 1.2;
+  }
+  
+  .stars {
+    background-image: url("https://www.storyjumper.com/images/star-icon-24.png");
+    background-repeat: repeat-x;
+    display: block;
+    height: 24px;
+    pointer-events: none;
+    width: 0px;
+  }
+  .stars.stars-1 {
+    width: 24px;
+  }
+  .stars.stars-2 {
+    width: 48px;
+  }
+  .stars.stars-3 {
+    width: 72px;
+  }
+  .stars.stars-4 {
+    width: 96px;
+  }
+  .stars.stars-5 {
+    width: 120px;
+  }
+  .stars.stars-0-5 {
+    width: 12px;
+  }
+  .stars.stars-1-5 {
+    width: 36px;
+  }
+  .stars.stars-2-5 {
+    width: 60px;
+  }
+  .stars.stars-3-5 {
+    width: 84px;
+  }
+  .stars.stars-4-5 {
+    width: 108px;
+  }
