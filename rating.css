@@ -1,86 +1,7 @@
-.rate{
-    width: fit-content;
+.app{
+    padding-top: 1px;
+    padding-left: 3px;
 }
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:20px;
-    color:#ccc;
-}
-
-.ligne-height{
-    line-height: 20px;
-    margin: 12px 0px 0px 10px;
-}
-
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #ffc700;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #ffc700;
-}
-
-/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
-
-.rate__check{
-    width: fit-content;
-}
-.rate__check:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate__check:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:20px;
-    color:#ccc;
-}
-
-.ligne-height{
-    line-height: 20px;
-    margin: 12px 0px 0px 10px;
-}
-
-.rate__check:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate__check > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate__check:not(:checked) > label:hover,
-.rate__check:not(:checked) > label:hover ~ label {
-    color: #ffc700;  
-}
-.rate__check > input:checked + label:hover,
-.rate__check > input:checked + label:hover ~ label,
-.rate__check > input:checked ~ label:hover,
-.rate__check > input:checked ~ label:hover ~ label,
-.rate__check > label:hover ~ input:checked ~ label {
-    color: #ffc700;
-}
-
-/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
 
 .star-rating__checkbox {
     position: absolute;
@@ -93,6 +14,10 @@
     border: 0;
   }
   
+.ligne-height{
+    margin-left:5px;
+}
+
   .star-rating__star {
     display: inline-block;
     padding: 3px;
@@ -112,16 +37,6 @@
     cursor: default;
   }
 
-
-
-  .app {
-    padding: 10px;
-  }
-  
-  .label {
-    display: block;
-  }
-  
   .range {
     margin: 10px 0;
   }
@@ -131,40 +46,26 @@
   }
   
   .stars {
-    background-image: url("https://www.storyjumper.com/images/star-icon-24.png");
-    background-repeat: repeat-x;
+    background-image: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/24/star-icon.png");
+    background-repeat: space;
+    background-size: 15px;
     display: block;
     height: 24px;
     pointer-events: none;
     width: 0px;
   }
   .stars.stars-1 {
-    width: 24px;
+    width: 20px;
   }
   .stars.stars-2 {
-    width: 48px;
+    width: 33px;
   }
   .stars.stars-3 {
-    width: 72px;
+    width: 50px;
   }
   .stars.stars-4 {
-    width: 96px;
+    width: 70px;
   }
   .stars.stars-5 {
-    width: 120px;
-  }
-  .stars.stars-0-5 {
-    width: 12px;
-  }
-  .stars.stars-1-5 {
-    width: 36px;
-  }
-  .stars.stars-2-5 {
-    width: 60px;
-  }
-  .stars.stars-3-5 {
-    width: 84px;
-  }
-  .stars.stars-4-5 {
-    width: 108px;
+    width: 89px;
   }

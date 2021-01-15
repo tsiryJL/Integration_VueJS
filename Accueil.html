@@ -192,20 +192,13 @@
               </div>
               <div class="ligne-height bd-highlight">
                 <b>Store verified</b>
-          <!--  Rating Stars-->
-                <div class="rate">
-                  <input type="radio" id="star5" name="rate" value="5" />
-                  <label for="star5" title="text">5 stars</label>
-                  <input type="radio" id="star4" name="rate" value="4" />
-                  <label for="star4" title="text">4 stars</label>
-                  <input type="radio" id="star3" name="rate" value="3" />
-                  <label for="star3" title="text">3 stars</label>
-                  <input type="radio" id="star2" name="rate" value="2" />
-                  <label for="star2" title="text">2 stars</label>
-                  <input type="radio" id="star1" name="rate" value="1" />
-                  <label for="star1" title="text">1 star</label>
+
+                <!--  Rating Stars-->
+                <div class="app">
+                  <input class="range d-none" id="star-rating" type="number" step=".5" value="5"/>
+                  <div class="stars" id="stars"></div>
                 </div>
-          
+      
               </div>
               <div class="p-3 ml-auto bd-highlight">
                 <input type="checkbox" name="check" class="checkbox">
@@ -231,19 +224,11 @@
             </div>
             <div class="ligne-height bd-highlight">
               <b>Store verified</b>
-        <!--  Rating Stars-->
-              <div class="rate__check">
-                <input type="radio" id="star5" name="rate__check" value="5" />
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate__check" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate__check" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate__check" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate__check" value="1" />
-                <label for="star1" title="text">1 star</label>
-              </div>
+                <!--  Rating Stars-->
+                <div class="app">
+                  <input class="range d-none" id="star-rating" type="number" step=".5" value="3"/>
+                  <div class="stars" id="stars"></div>
+                </div>
         
             </div>
             <div class="p-3 ml-auto bd-highlight">
@@ -252,15 +237,9 @@
           </div>
       </div><!--/.accordion-content-->
 
-    </div>
+      </div>
     </section>
  
-<div class="app">
-  <label class="label" for="star-rating">Rating</label>
-  <input class="range d-none" id="star-rating" type="number" step=".5" value="3"/>
-  <div class="stars" id="stars"></div>
-  <p id="star-count"></p>
-</div>
   </body>
   <!-- Jquery CDN -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
