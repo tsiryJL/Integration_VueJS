@@ -225,3 +225,56 @@
   cursor: pointer; 
   opacity: 0.8;
 }
+
+/*Grey button*/
+
+.grey-button{
+    background: #ecebeb;
+    border-radius: 20px;
+    border: 1px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 159px;
+}
+
+.grey-button:focus{
+  outline: none;
+}
+
+.grey-button:hover{
+  border: 1px solid rgba(119, 119, 119, 0.856);
+}
+
+.d-flex span{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Card image*/
+.img__card{
+  border-radius: 2em;
+  height: 14em;
+}
+
+.card-text{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+p.card-text span:first-child{
+  font-size: 20px;
+}
+
+.card{
+  height: auto;
+  width: 350px;
+  height: auto;
+  border-radius: 1em!important;
+  /* box-shadow: 0px 3px 4px #cecece; */
+  margin: 1em;
+  border: none;
+}

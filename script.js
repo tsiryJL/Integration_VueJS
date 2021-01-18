@@ -1,3 +1,4 @@
+//Responsive
 function myFunction(x) {
     if (x.matches) { // si responsive
      MeRemove();
@@ -33,7 +34,7 @@ $(function ($) {
   });
 });
 
-
+//Rating
 (function() {
   var classes, count, d, range, updateStars;
 
