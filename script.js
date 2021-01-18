@@ -1,3 +1,4 @@
+//Responsive
 function myFunction(x) {
     if (x.matches) { // si responsive
      MeRemove();
@@ -33,3 +34,34 @@ $(function ($) {
   });
 });
 
+//Rating
+(function() {
+  var classes, count, d, range, updateStars;
+
+  d = document;
+
+  range = d.querySelector('#star-rating');
+
+  count = d.querySelector('#star-count');
+
+  classes = d.querySelector('#stars').classList;
+
+  updateStars = function(event) {
+    var formattedVal, val;
+    val = this.value || 0;
+    //Change Value
+    formattedVal = range.value;
+    console.log("la valeur rating est : " + formattedVal);
+
+    while (classes.length > 1) {
+      classes.remove(classes.item(1));
+    }
+    //count.innerHTML = val;
+    return classes.add('stars-' + formattedVal);
+  };
+
+  range.addEventListener('change', updateStars);
+
+  updateStars();
+
+}).call(this);

@@ -1,41 +1,71 @@
-.rate{
-    width: fit-content;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:20px;
-    color:#ccc;
+.app{
+    padding-top: 1px;
+    padding-left: 3px;
 }
 
+.star-rating__checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  
 .ligne-height{
-    line-height: 20px;
-    margin: 12px 0px 0px 10px;
+    margin-left:5px;
 }
 
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #ffc700;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #ffc700;
-}
+  .star-rating__star {
+    display: inline-block;
+    padding: 3px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1.5em;
+    color: #ababab;
+    transition: color 0.2s ease-out;
+  }
+  .star-rating__star:hover {
+    cursor: pointer;
+  }
+  .star-rating__star.is-selected {
+    color: #ffd700;
+  }
+  .star-rating__star.is-disabled:hover {
+    cursor: default;
+  }
 
-/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+  .range {
+    margin: 10px 0;
+  }
+  
+  li {
+    line-height: 1.2;
+  }
+  
+  .stars {
+    background-image: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/24/star-icon.png");
+    background-repeat: space;
+    background-size: 15px;
+    display: block;
+    height: 24px;
+    pointer-events: none;
+    width: 0px;
+  }
+  .stars.stars-1 {
+    width: 20px;
+  }
+  .stars.stars-2 {
+    width: 33px;
+  }
+  .stars.stars-3 {
+    width: 50px;
+  }
+  .stars.stars-4 {
+    width: 70px;
+  }
+  .stars.stars-5 {
+    width: 89px;
+  }
