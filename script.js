@@ -7,6 +7,7 @@ function myFunction(x) {
     }
   }
   var element = document.getElementById("responsive__logo");
+  var card__responsive = document.getElementById("card__responsive");
 
   var x = window.matchMedia("(max-width: 991px)")
   myFunction(x) // Call listener function at run time
@@ -14,10 +15,14 @@ function myFunction(x) {
   
   function MeRemove() {
     element.classList.remove("d-none");
+    card__responsive.classList.remove("container");
+    card__responsive.classList.add("ml-5")
   }
 
   function MeAdd() {
     element.classList.add("d-none");
+    card__responsive.classList.remove("ml-5")
+    card__responsive.classList.add("container")
   }
 
 var scene = document.getElementById('js-scene');
