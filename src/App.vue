@@ -1,29 +1,417 @@
 <template>
-  <div id="app">
+  
+    <!-- ======= Top Bar ======= -->
+    <header id="topbar" class="d-none d-lg-flex align-items-center fixed-top justify-content-around bg-white" style="height: 4em;">
+    <!-- LOGO -->
+        <div class="p-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 53" width="125" height="53">
+            <defs>
+              <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                <path d="M-114 -25L1806 -25L1806 3775L-114 3775Z" />
+              </clipPath>
+            </defs>
+            <style>
+              tspan { white-space:pre }
+              .shp0 { fill: #040f3c } 
+              .txt1 { font-size: 3px;fill: #040f3c;font-family: "Helvetica Neue LT Std" } 
+              .shp2 { fill: #f5710f } 
+            </style>
+            <g id="Landing page seller" clip-path="url(#cp1)">
+              <g id="Group 3234">
+                <g id="Group 3233">
+                  <path id="Path 1" class="shp0" d="M64.31 10.67L67.08 10.67L67.08 22.78L64.31 22.78L64.31 10.67ZM71.47 15.61C71.52 14.96 71.32 14.31 70.91 13.8C70.48 13.35 69.87 13.12 69.25 13.16C68.67 13.12 68.09 13.32 67.66 13.71C67.27 14.14 67.07 14.71 67.1 15.28L66.86 12.78C67.17 12.1 67.66 11.51 68.26 11.08C68.84 10.68 69.51 10.48 70.21 10.49C70.98 10.47 71.74 10.67 72.39 11.09C73.02 11.51 73.51 12.12 73.78 12.83C74.11 13.71 74.27 14.65 74.25 15.6L74.25 22.81L71.48 22.81L71.47 15.61ZM78.61 15.61C78.65 14.95 78.44 14.31 78.03 13.8C77.59 13.35 76.98 13.12 76.36 13.16C75.77 13.13 75.2 13.35 74.79 13.78C74.39 14.27 74.2 14.89 74.24 15.52L73.68 12.95C74.02 12.22 74.54 11.6 75.19 11.13C75.79 10.71 76.51 10.48 77.24 10.49C78.03 10.47 78.8 10.68 79.46 11.09C80.1 11.51 80.6 12.11 80.88 12.83C81.22 13.71 81.38 14.65 81.36 15.6L81.36 22.81L78.59 22.81L78.61 15.61Z" />
+                  <path id="Path 2" class="shp0" d="M86.95 18.03C86.9 18.63 87.1 19.23 87.5 19.69C87.93 20.1 88.52 20.32 89.11 20.28C89.7 20.32 90.27 20.12 90.71 19.73C91.11 19.3 91.31 18.72 91.26 18.13L91.43 20.73C91.19 21.35 90.79 21.9 90.26 22.31C89.69 22.75 88.98 22.98 88.26 22.96C87.1 23.02 85.98 22.55 85.21 21.68C84.43 20.65 84.05 19.38 84.13 18.09L84.13 10.67L86.9 10.67L86.95 18.03ZM91.29 10.67L94.06 10.67L94.06 22.78L91.29 22.78L91.29 10.67Z" />
+                  <path id="Path 3" class="shp0" d="M99.64 19.22C99.63 19.47 99.71 19.71 99.87 19.9C100.03 20.07 100.26 20.16 100.49 20.14L101.33 20.14L101.33 22.81L99.79 22.81C98.98 22.86 98.18 22.55 97.61 21.98C97.06 21.31 96.78 20.46 96.84 19.6L96.84 5.83L99.61 5.83L99.64 19.22Z" />
+                  <path id="Path 4" class="shp0" d="M102.25 10.67L107.94 10.67L107.94 13.1L102.25 13.1L102.25 10.67ZM104.23 22.02C103.71 21.34 103.45 20.49 103.52 19.63L103.52 7.14L106.29 7.14L106.29 19.24C106.27 19.48 106.33 19.72 106.47 19.92C106.58 20.09 106.78 20.18 106.98 20.16L107.95 20.16L107.95 22.84L106.44 22.84C105.62 22.9 104.81 22.61 104.23 22.02Z" />
+                  <path id="Path 5" class="shp0" d="M110.32 5.83L113.1 5.83L113.1 8.6L110.32 8.6L110.32 5.83ZM110.32 10.69L113.1 10.69L113.1 22.78L110.32 22.78L110.32 10.69Z" />
+                  <path id="Path 6" class="shp0" d="M123.86 15.37L123.86 18.03L115.78 18.03L115.78 15.37L123.86 15.37Z" />
+                  <path id="Path 7" class="shp0" d="M66.39 42.98C65.61 42.56 64.97 41.92 64.56 41.12C64.12 40.21 63.9 39.19 63.93 38.17L63.93 36.51C63.9 35.5 64.12 34.51 64.56 33.6C64.97 32.81 65.61 32.17 66.39 31.76C67.3 31.33 68.3 31.13 69.3 31.17C69.92 31.16 70.53 31.24 71.13 31.39C71.67 31.53 72.19 31.76 72.67 32.05C73.11 32.33 73.5 32.68 73.81 33.1L71.92 34.88C71.6 34.55 71.23 34.28 70.81 34.11C70.38 33.93 69.93 33.84 69.47 33.84C68.73 33.79 68 34.05 67.46 34.54C66.96 35.08 66.7 35.81 66.74 36.54L66.74 38.21C66.69 38.96 66.95 39.7 67.45 40.25C68 40.76 68.72 41.02 69.47 40.97C70.41 40.98 71.3 40.57 71.93 39.87L73.82 41.76C73.49 42.16 73.08 42.5 72.63 42.76C72.15 43.05 71.63 43.27 71.08 43.41C70.49 43.56 69.88 43.63 69.27 43.63C68.27 43.65 67.28 43.42 66.39 42.98Z" />
+                  <path id="Path 8" fill-rule="evenodd" class="shp0" d="M77.62 43.01C76.86 42.61 76.24 41.98 75.86 41.21C75.44 40.32 75.24 39.34 75.26 38.35L75.26 36.38C75.23 35.41 75.43 34.44 75.84 33.55C76.23 32.79 76.85 32.17 77.62 31.78C79.37 30.96 81.4 30.96 83.16 31.78C83.9 32.18 84.49 32.8 84.87 33.55C85.29 34.43 85.49 35.4 85.47 36.37L85.47 38.38C85.49 39.36 85.29 40.33 84.87 41.21C84.48 41.97 83.87 42.6 83.11 43C81.36 43.83 79.32 43.83 77.57 43L77.62 43.01ZM82.05 40.29C82.49 39.75 82.7 39.08 82.66 38.39L82.66 36.38C82.7 35.7 82.48 35.03 82.05 34.5C81.08 33.62 79.59 33.62 78.62 34.5C78.19 35.03 77.97 35.7 78.01 36.38L78.01 38.39C77.97 39.07 78.19 39.75 78.61 40.29C79.58 41.18 81.08 41.18 82.05 40.29L82.05 40.29Z" />
+                  <path id="Path 9" class="shp0" d="M88.02 31.33L90.79 31.33L90.79 43.45L88.02 43.45L88.02 31.33ZM95.17 36.28C95.22 35.63 95.02 34.98 94.62 34.47C94.18 34.02 93.58 33.79 92.96 33.83C92.37 33.8 91.8 34 91.37 34.39C90.98 34.81 90.77 35.38 90.82 35.96L90.57 33.45C90.89 32.77 91.37 32.19 91.97 31.75C92.54 31.35 93.22 31.15 93.92 31.16C94.69 31.14 95.45 31.35 96.1 31.75C96.73 32.18 97.21 32.79 97.48 33.5C97.82 34.39 97.98 35.33 97.96 36.27L97.96 43.45L95.18 43.45L95.17 36.28ZM102.32 36.28C102.36 35.63 102.15 34.98 101.73 34.47C101.3 34.02 100.69 33.79 100.07 33.83C99.48 33.8 98.91 34.02 98.5 34.44C98.1 34.94 97.91 35.56 97.94 36.19L97.39 33.62C97.72 32.89 98.24 32.26 98.89 31.8C99.5 31.38 100.22 31.15 100.95 31.16C101.74 31.14 102.51 31.35 103.17 31.75C103.81 32.18 104.3 32.79 104.58 33.5C104.93 34.38 105.09 35.33 105.07 36.27L105.07 43.45L102.3 43.45L102.32 36.28Z" />
+                  <path id="Path 10" class="shp0" d="M107.89 31.33L110.66 31.33L110.66 43.45L107.89 43.45L107.89 31.33ZM115.05 36.28C115.1 35.63 114.9 34.98 114.49 34.47C114.06 34.02 113.45 33.79 112.83 33.83C112.25 33.8 111.68 34 111.24 34.39C110.85 34.81 110.65 35.38 110.69 35.96L110.44 33.45C110.76 32.77 111.24 32.19 111.84 31.75C112.42 31.35 113.1 31.15 113.79 31.16C114.56 31.14 115.32 31.35 115.97 31.75C116.61 32.18 117.09 32.79 117.36 33.5C117.7 34.39 117.86 35.33 117.83 36.27L117.83 43.45L115.06 43.45L115.05 36.28ZM122.19 36.28C122.23 35.63 122.02 34.98 121.61 34.47C121.17 34.02 120.56 33.79 119.94 33.83C119.36 33.8 118.78 34.02 118.37 34.44C117.98 34.93 117.78 35.56 117.82 36.19L117.27 33.62C117.6 32.89 118.12 32.26 118.77 31.8C119.38 31.37 120.11 31.15 120.86 31.17C121.64 31.15 122.41 31.35 123.08 31.76C123.71 32.18 124.21 32.79 124.48 33.51C124.83 34.39 125 35.33 124.97 36.28L124.97 43.45L122.2 43.45L122.19 36.28Z" />
+                  <path id="Path 11" class="shp0" d="M129.92 42.98C129.13 42.57 128.48 41.94 128.06 41.15C127.61 40.24 127.39 39.22 127.42 38.2L127.42 36.84C127.39 35.78 127.6 34.73 128.04 33.77C128.42 32.95 129.04 32.28 129.82 31.83C130.69 31.37 131.66 31.14 132.64 31.17C133.58 31.14 134.5 31.41 135.27 31.94C136.03 32.5 136.61 33.27 136.93 34.16C137.34 35.3 137.53 36.5 137.49 37.71L137.49 38.54L129.32 38.54L129.32 36.49L134.96 36.49L134.96 36.36C134.93 35.64 134.68 34.96 134.25 34.39C133.85 33.92 133.26 33.66 132.64 33.68C131.91 33.64 131.2 33.93 130.7 34.47C130.21 35.1 129.96 35.89 130.01 36.69L130.01 38.22C129.92 39 130.19 39.78 130.75 40.34C131.3 40.89 132.07 41.17 132.85 41.08C133.32 41.08 133.78 40.99 134.21 40.82C134.66 40.65 135.06 40.4 135.42 40.09L137.25 41.8C136.64 42.37 135.94 42.82 135.17 43.14C134.44 43.45 133.65 43.61 132.85 43.61C131.84 43.64 130.83 43.42 129.92 42.98L129.92 42.98Z" />
+                  <path id="Path 12" class="shp0" d="M139.98 31.33L142.89 31.33L142.89 43.45L139.98 43.45L139.98 31.33ZM146.04 33.99C145.74 33.88 145.42 33.83 145.1 33.83C144.49 33.8 143.9 34.02 143.47 34.45C143.06 34.94 142.85 35.56 142.89 36.19L142.65 33.45C142.96 32.78 143.43 32.21 144.02 31.78C144.56 31.39 145.21 31.18 145.88 31.18C146.37 31.18 146.85 31.26 147.31 31.42C147.73 31.57 148.11 31.81 148.42 32.13L146.72 34.47C146.53 34.26 146.3 34.1 146.04 33.99L146.04 33.99Z" />
+                  <path id="Path 13" class="shp0" d="M151.47 42.98C150.68 42.56 150.04 41.92 149.64 41.12C149.19 40.21 148.97 39.19 149 38.17L149 36.51C148.98 35.5 149.19 34.51 149.64 33.6C150.04 32.81 150.68 32.17 151.47 31.76C152.37 31.32 153.36 31.1 154.37 31.13C154.98 31.13 155.59 31.2 156.19 31.36C156.73 31.5 157.25 31.72 157.73 32.02C158.17 32.3 158.56 32.65 158.87 33.07L156.98 34.84C156.66 34.51 156.29 34.25 155.87 34.07C155.44 33.9 154.99 33.8 154.53 33.81C153.79 33.76 153.06 34.01 152.52 34.51C152.02 35.05 151.76 35.77 151.8 36.51L151.8 38.17C151.75 38.92 152.01 39.66 152.51 40.22C153.06 40.73 153.78 40.99 154.53 40.94C155.47 40.94 156.36 40.54 156.99 39.83L158.88 41.72C158.56 42.13 158.17 42.48 157.73 42.75C157.25 43.05 156.73 43.26 156.19 43.4C155.6 43.55 154.99 43.63 154.38 43.62C153.37 43.65 152.37 43.43 151.47 42.98Z" />
+                  <path id="Path 14" class="shp0" d="M162.81 42.98C162.01 42.57 161.37 41.92 160.96 41.13C160.5 40.21 160.28 39.2 160.31 38.18L160.31 36.84C160.29 35.78 160.49 34.73 160.92 33.77C161.3 32.95 161.93 32.28 162.71 31.83C163.58 31.37 164.55 31.14 165.53 31.17C166.48 31.14 167.41 31.41 168.19 31.94C168.95 32.5 169.53 33.27 169.85 34.16C170.25 35.3 170.44 36.5 170.4 37.71L170.4 38.54L162.22 38.54L162.22 36.49L167.85 36.49L167.85 36.36C167.83 35.64 167.58 34.95 167.14 34.39C166.74 33.92 166.15 33.66 165.54 33.68C164.81 33.64 164.09 33.93 163.59 34.47C163.1 35.1 162.86 35.89 162.9 36.69L162.9 38.22C162.81 39.01 163.08 39.8 163.64 40.36C164.19 40.92 164.98 41.2 165.76 41.11C166.23 41.1 166.69 41.02 167.12 40.85C167.56 40.67 167.97 40.43 168.33 40.11L170.15 41.82C169.55 42.39 168.85 42.84 168.08 43.16C167.35 43.47 166.56 43.63 165.76 43.63C164.74 43.66 163.73 43.43 162.81 42.98Z" />
+                  <text id="™" style="transform: matrix(1,0,0,1,172.256,32.72)" >
+                    <tspan x="0" y="0" class="txt1" dx="0" >™</tspan>
+                  </text>
+                  <g id="Group 3180">
+                    <path id="Path 15" class="shp2" d="M48.91 23.76L36.86 25.88C35.86 26.06 34.91 25.39 34.74 24.4C34.56 23.4 35.23 22.44 36.22 22.27L48.27 20.15C49.27 19.97 50.22 20.64 50.4 21.63C50.57 22.63 49.91 23.58 48.91 23.76Z" />
+                    <path id="Path 16" class="shp2" d="M15 16.08C14.4 16.18 13.79 15.93 13.44 15.44C10.46 11 11.54 5 15.87 1.87C20.21 -1.26 26.25 -0.38 29.52 3.86C29.87 4.32 29.94 4.93 29.71 5.46C29.48 5.99 28.98 6.35 28.4 6.4C27.83 6.46 27.27 6.19 26.94 5.71C25.59 3.62 23.19 2.46 20.71 2.67C18.24 2.88 16.08 4.44 15.09 6.72C14.11 9.01 14.46 11.65 16.01 13.59C16.26 13.93 16.36 14.36 16.29 14.78C16.23 15.19 15.99 15.57 15.65 15.81C15.46 15.95 15.24 16.04 15 16.08Z" />
+                    <path id="Ellipse 1" class="shp2" d="M25.28 52.53C22.79 52.53 20.78 50.52 20.78 48.03C20.78 45.55 22.79 43.54 25.28 43.54C27.76 43.54 29.77 45.55 29.77 48.03C29.77 50.52 27.76 52.53 25.28 52.53Z" />
+                    <path id="Ellipse 2" class="shp2" d="M44.05 49.22C41.56 49.22 39.55 47.21 39.55 44.72C39.55 42.24 41.56 40.23 44.05 40.23C46.53 40.23 48.54 42.24 48.54 44.72C48.54 47.21 46.53 49.22 44.05 49.22Z" />
+                    <path id="Path 17" fill-rule="evenodd" class="shp2" d="M49.74 15.64L51.82 27.45C52.2 29.57 51.72 31.74 50.48 33.5C49.25 35.26 47.37 36.45 45.26 36.82L21.42 41.03C17.03 41.79 12.86 38.86 12.09 34.48L11.82 32.96C11.77 32.83 11.73 32.7 11.7 32.56L9.77 21.61C9.62 20.76 8.96 17.2 8.11 17.01L1.46 14.74C0.96 14.63 0.52 14.32 0.26 13.88C0 13.44 -0.07 12.91 0.07 12.42C0.37 11.46 1.36 10.9 2.33 11.13L9.76 13.44C10.57 13.7 11.48 16.36 12.06 15.75C12.67 15.11 13.38 14.56 14.17 14.15L28.27 3.67C32.67 0.42 38.87 1.34 42.13 5.73L45.09 9.71C47.53 10.8 49.27 13.02 49.74 15.64ZM22.94 12.18L40.12 9.16L39.2 7.92C37.14 5.14 33.23 4.56 30.45 6.62L22.94 12.18ZM46.13 16.29C45.88 14.91 45 13.74 43.75 13.12C43.47 13.07 43.21 12.97 42.98 12.82C42.34 12.64 41.68 12.6 41.03 12.72L17.19 16.92C16.81 16.99 16.44 17.11 16.09 17.28L14.98 18.09C14.9 18.15 14.82 18.2 14.74 18.24C13.78 19.25 13.35 20.66 13.59 22.03L15.35 32.01L15.68 33.86C16.11 36.24 18.39 37.83 20.78 37.43L44.66 33.21C47.05 32.77 48.64 30.5 48.23 28.11L46.13 16.29Z" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      
+      <!-- SEARCH BUTTON -->
+        <div class="p-1 searchbox d-flex">
+          <input id="search"type="text" placeholder="Search" />
+          <span class="icon-wrap">
+
+            <!-- SEARCH ICON-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+          </span>
+        </div>
+
+      <!-- COMMERCE ICON -->
+        <div class="p-2">
+          <span class="p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 19" width="23" height="19">
+              <defs>
+                <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                  <path d="M-1673 -36L247 -36L247 3764L-1673 3764Z" />
+                </clipPath>
+              </defs>
+              <style>
+                tspan { white-space:pre }
+                .shp0 { fill: #040f3c } 
+              </style>
+              <g id="Landing page seller" clip-path="url(#cp1)">
+                <g id="Group 3234">
+                  <g id="noun_cart_2102832 (4)">
+                    <path id="Path 5" fill-rule="evenodd" class="shp0" d="M1 0.92C1 0.41 1.41 0 1.92 0L4.18 0C4.61 0 4.99 0.3 5.08 0.72L5.66 3.36L22.08 3.36C22.38 3.36 22.66 3.51 22.83 3.75C23 4 23.05 4.31 22.95 4.59L19.85 13.18C19.72 13.55 19.37 13.79 18.99 13.79L6.83 13.79C6.22 13.79 5.7 14.45 5.7 15.23C5.7 16.01 6.22 16.67 6.83 16.67L18.99 16.67C19.49 16.67 19.9 17.08 19.9 17.59C19.9 18.09 19.49 18.51 18.99 18.51L6.83 18.51C5.2 18.51 3.87 17.04 3.87 15.23C3.87 13.85 4.65 12.67 5.74 12.19L3.45 1.83L1.92 1.83C1.41 1.83 1 1.42 1 0.92ZM20.78 5.2L6.07 5.2L7.57 11.96L18.34 11.96L20.78 5.2Z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+      
+      <!-- PROFIL ICON -->
+          <span class="p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+              <defs>
+                <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                  <path d="M-1744 -37L176 -37L176 3763L-1744 3763Z" />
+                </clipPath>
+              </defs>
+              <style>
+                tspan { white-space:pre }
+                .shp0 { fill: #040f3c } 
+              </style>
+              <g id="Landing page seller" clip-path="url(#cp1)">
+                <g id="Group 3234">
+                  <g id="Profile">
+                    <path id="Ellipse_744" class="shp0" d="M10 11.11C6.89 11.11 4.37 8.63 4.37 5.56C4.37 2.48 6.89 0 10 0C13.11 0 15.62 2.48 15.62 5.56C15.62 8.63 13.11 11.11 10 11.11Z" />
+                    <path id="Path_34198" class="shp0" d="M18.99 16.68L18.99 16.68C18.99 16.6 18.99 16.52 18.99 16.44C18.97 16.15 18.88 15.86 18.75 15.6C18.2 14.53 16.67 14.05 15.39 13.77C14.47 13.58 13.55 13.46 12.61 13.41L11.64 13.33L11.2 13.33L10.65 13.33L9.34 13.33L8.8 13.33L8.36 13.33L7.38 13.41C6.45 13.46 5.52 13.58 4.61 13.77C3.33 14.01 1.79 14.5 1.25 15.6C1.11 15.86 1.03 16.15 1 16.44C1 16.52 1 16.6 1 16.68L1 16.68C1 16.75 1 16.83 1 16.91C1.03 17.2 1.12 17.49 1.26 17.74C1.8 18.81 3.34 19.3 4.62 19.57C5.53 19.75 6.46 19.87 7.39 19.94L8.37 20L8.6 20L8.81 20L11.21 20L11.41 20L11.65 20L12.62 19.94C13.56 19.87 14.48 19.75 15.4 19.57C16.68 19.32 18.21 18.84 18.76 17.74C18.89 17.48 18.97 17.19 19 16.89C19 16.82 19 16.75 18.99 16.68Z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </div>
+  
+    </header>
+
+    <!-- ======= Header ======= -->
+    <nav id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center">
+        <div class="image mr-auto">
+          <img id="responsive__logo" class="d-none" src="logo.png" alt="">
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li>
+              <div class="dropdown">
+                <a class="#" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: flex;">
+                  ALL BRANDS 
+                  <span class="p-1"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+              </div>
+            </li>
+            <li><a href="#about">SKIN CARE</a></li>
+            <li><a href="#menu">MAKE UP</a></li>
+            <li><a href="#specials">HAIR CARE</a></li>
+            <li><a href="#events">BATH & BODY</a></li>
+            <li><a href="#chefs">BEAUTY SUPPLEMENTS</a></li>
+
+            <li class="book-a-table text-center"><a href="#book-a-table">SELL WITH Us</a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+
+      </div>
+    </nav><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <!--Début banniere -->
+        <div class="carousel-item active" style="background-color: #f7b533;">
+          <!-- Center bannière  --> 
+          <div class="carousel-container">         
+            <div class="items__inner" id="js-scene">
+              <div class="items__layer layer" data-depth="0.35"><div class="items__item text-white">Store</div></div>
+              <div class="items__layer layer" data-depth="0.10"><div class="items__item text-white"></div></div>
+              <div class="items__layer layer" data-depth="0.45"><div class="items__item text-white">IMAGE VANS</div></div>
+              <div class="items__layer layer" data-depth="0.20"><div class="items__item text-white">Cover</div></div>
+            </div>
+              <!-- partial parallax -->
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js'></script>
+            
+            <!-- Mini Card -->
+            <div class="d-flex miniCard-1 align-items-center p-1 m-3 bg-white bd-highlight">
+              <div class="">
+              <img src="https://via.placeholder.com/250" class="profil__card bd-highlight" alt="image-profil">
+              </div>
+              <div class="ligne-height bd-highlight">
+                <b>Store verified</b>
+
+                <!--  Rating Stars-->
+                <div class="app">
+                  <input class="range d-none" id="star-rating" type="number" step=".5" value="5"/>
+                  <div class="stars" id="stars"></div>
+                </div>
+      
+              </div>
+              <div class="p-3 ml-auto bd-highlight">
+                <input type="checkbox" name="check" class="checkbox">
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <!--/#accordion-->
+      <div id="accordion" class="accordion-container">
+      <h4 class="accordion-title js-accordion-title">ABOUT THE STORE</h4>
+      <div class="accordion-content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+      </div><!--/.accordion-content-->
+
+      <h4 class="accordion-title js-accordion-title">STORE STATUT</h4>
+      <div class="accordion-content-card">
+          <!-- Mini Card -->
+          <div class="d-flex miniCard-2 align-items-center p-1 m-3 bg-white bd-highlight">
+            <div class="">
+            <img src="https://via.placeholder.com/250" class="profil__card bd-highlight" alt="image-profil">
+            </div>
+            <div class="ligne-height bd-highlight">
+              <b>Store verified</b>
+
+              <!--  Rating Stars-->
+              <div class="app">
+                <input class="range d-none" id="star-rating" type="number" step=".5" value="5"/>
+                <div class="stars" id="stars"></div>
+              </div>
     
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+            </div>
+            <div class="p-3 ml-auto bd-highlight">
+              <input type="checkbox" name="check" class="checkbox">
+            </div>
+          </div> 
+      </div><!--/.accordion-content-->
+
+      </div>
+    </section>
+ 
+
+    <!--  Top Products  -->
+    <section id="card__responsive" class="container mt-5">
+      <div class="d-flex flex-wrap justify-content-between mb-2 ml-4 mr-5">
+        <span>Top products</span>
+        <span><button class="grey-button text-center">SHOW MORE</button></span>
+      </div>
+
+   
+      <div class="d-flex flex-wrap">
+
+        <!--Card Boucle Sectino-->
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+      </div>
+
+      <!--  New Add  -->
+      <div class="d-flex flex-wrap justify-content-between mt-2 mr-5 ml-4">
+        <span>New Add</span>
+        <span><button class="grey-button text-center">SHOW MORE</button></span>
+      </div>
+
+      <div class="d-flex flex-wrap">
+
+        <!--Card Boucle Sectino-->
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; border: none;">
+            <img class="img__card" src="https://via.placeholder.com/150" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                <span>Holmustund</span>
+                <span>$ 1999,99</span>
+              </p>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+        <!-- ****** Footer Area Start ****** -->
+        <footer class="fplus-footer-area text-white">
+          <div class="ml-5">
+              <div class="d-flex flex-wrap">
+                
+                      <div class="about-us-widget">
+                          LOGO
+                      </div>
+      
+                
+                      <div class="footer-nav-widget">   
+                        <p>MAIN PAGES</p>    
+                        <ul>
+                          <li><a href="#">Sell with us</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Contact us</a></li>
+                          <li><a href="#">Promos</a></li>
+                          <li><a href="#">Become an ambassador</a></li>
+                        </ul>                     
+                      </div>
+                  
+        
+                    <div class="footer-nav-widget">
+                        <p>POLICY</p>
+                      <ul>
+                          <li><a href="#">Terms of usage</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Return police</a></li>
+                      </ul>
+                
+                    </div>
+                
+                  
+                      <div class="footer-nav-widget">
+                          <p>CATEGORIE</p>
+                              <ul>
+                                  <li><a href="#">Skin care</a></li>
+                                  <li><a href="#">Make up</a></li>
+                                  <li><a href="#">Bath & body</a></li>
+                                  <li><a href="#">Beauty supplements</a></li>
+                              </ul>
+                        
+                      </div>
+                 
+                  <div class="ml-3">
+                      <div class="subscribe-widget">
+                          <p>SUBSCRIBER</p>
+                          <form action="#">
+                              <input type="email" name="s-email" id="subscribeEmail" placeholder="Enter your email">
+                              <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                          </form>
+                          Stay in touch with us for the treshest products!
+                      </div>
+                      <div class="footer-social-widget">
+                          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <div>
+        text
+      </div>
+      <!-- ****** Footer Area End ****** -->
+  
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
