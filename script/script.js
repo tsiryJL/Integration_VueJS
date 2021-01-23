@@ -7,7 +7,10 @@ function myFunction(x) {
     }
   }
   var element = document.getElementById("responsive__logo");
+  var chart = document.getElementById("responsive__chart");
+  var profil = document.getElementById("responsive__profil");
   var card__responsive = document.getElementById("card__responsive");
+  var footer = document.getElementById("responsive__footer");
 
   var x = window.matchMedia("(max-width: 991px)")
   myFunction(x) // Call listener function at run time
@@ -15,14 +18,22 @@ function myFunction(x) {
   
   function MeRemove() {
     element.classList.remove("d-none");
+    chart.classList.remove("d-none");
+    profil.classList.remove("d-none");
     card__responsive.classList.remove("container");
-    card__responsive.classList.add("ml-5")
+    card__responsive.classList.add("ml-5");
+    footer.classList.add("w-100");
+    footer.classList.add("mb-5");
   }
 
   function MeAdd() {
     element.classList.add("d-none");
-    card__responsive.classList.remove("ml-5")
-    card__responsive.classList.add("container")
+    chart.classList.add("d-none");
+    profil.classList.add("d-none");
+    card__responsive.classList.remove("ml-5");
+    card__responsive.classList.add("container");
+    footer.classList.remove("w-100");
+    footer.classList.remove("mb-5");
   }
 
 var scene = document.getElementById('js-scene');
