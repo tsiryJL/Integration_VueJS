@@ -43,7 +43,7 @@
 }
 
 .footer-nav-widget{
-    width: 13em;
+    width: 11em;
 }
 
 .footer-nav-widget p{
@@ -61,3 +61,22 @@
 .text-size-12{
     font-size: 12px;
 }
+.send {
+    width: 16px;
+    height: 16px;
+    background: url("../image/send.png") no-repeat center;
+    right: 37px;
+    top: 4px;
+    border:none;
+    position: relative;
+  }
+
+  input {
+    padding: 12px;
+    background: 0;
+    color: #fff;
+    border: 2px #ffffff77 solid;
+    border-radius: 6px;
+    padding-right: 40px;
+    font-size: 13px;
+  }
