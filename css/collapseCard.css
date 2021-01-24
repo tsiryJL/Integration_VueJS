@@ -69,17 +69,13 @@
   width: 350px;
   position: absolute;
   background-color: white;
-  top: 54%;
+  top: 58%;
   left: 3em;
 }
 
 
 .profil__card{
-  width: 70px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 20%;
-  margin: 3px;
+  width: 1em;
 }
 
 .miniCard-1{

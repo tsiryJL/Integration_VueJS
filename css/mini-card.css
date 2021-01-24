@@ -1,10 +1,19 @@
-/*Card image*/
+.image__card{
+  background-color: #d6d6d6;
+  padding: 1em;
+  margin: 4px;
+  border-radius: 6px;
+  width:3.5em;
+  text-align: center;
+}
+
 .img__card{
-    border-radius: 2em;
-    height: 14em;
-  }
-  
-  .card-text{
+  border-radius: 2em;
+  height: 14em;
+  padding: 10px;
+}
+
+.card-text{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
